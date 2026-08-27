@@ -1,0 +1,155 @@
+.join-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f7f8fc;
+
+    padding: 30px;
+}
+
+.join-card {
+    width: 100%;
+    max-width: 440px;
+
+    padding: 40px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.join-icon {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #eff6ff;
+
+    font-size: 28px;
+}
+
+.join-card h1 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 30px;
+}
+
+.join-card > p {
+    margin: 12px 0 28px;
+
+    color: #6b7280;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+.join-card form {
+    text-align: left;
+}
+
+.join-card label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #374151;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.join-card input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+.join-card input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.join-card form button {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.join-card form button:hover {
+    background: #1d4ed8;
+}
+
+.join-error {
+    margin-bottom: 18px;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+
+    font-size: 13px;
+}
+
+.back-btn {
+    margin-top: 20px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    color: #111827;
+}

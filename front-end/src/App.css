@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f9fc;
+    color: #111827;
+}
+
+.navbar {
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.login-btn {
+    padding: 11px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: calc(100vh - 75px);
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tagline {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 5vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero-description {
+    max-width: 520px;
+    color: #6b7280;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 14px 25px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary-btn {
+    border: none;
+    background: #2563eb;
+    color: white;
+}
+
+.secondary-btn {
+    background: white;
+    border: 1px solid #d1d5db;
+    color: #111827;
+}
+
+.hero-visual {
+    width: 48%;
+}
+
+.video-card {
+    padding: 20px;
+    background: #111827;
+    border-radius: 22px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+.video-header {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.video-header span {
+    color: #22c55e;
+    margin-right: 8px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.person {
+    height: 150px;
+    border-radius: 12px;
+    background: #374151;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.person span {
+    font-size: 45px;
+}
+
+.person p {
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+.meeting-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.meeting-controls button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #374151;
+    color: white;
+}
+
+.meeting-controls .end-call {
+    background: #ef4444;
+}
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .hero {
+        padding: 40px 5%;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+        letter-spacing: -2px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+
+    .person {
+        height: 120px;
+    }
+}
