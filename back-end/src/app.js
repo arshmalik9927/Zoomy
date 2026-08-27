@@ -1,3 +1,6 @@
+if (process.env.NODE_ENV != "production") {
+    require("dotenv").config();
+}
 import express from "express";
 import { createServer } from "node:http";
 import mongoose from "mongoose";
@@ -28,13 +31,12 @@ app.use(express.urlencoded({
 // Routes
 app.use("/api/users", userRoutes);
 app.use("/api/meetings", meetingRoutes);
-
+const dbUrl = process.env.ATLASDB_URL;
 // MongoDB + Server
 const start = async () => {
     try {
         const connectionDb = await mongoose.connect(
-            "mongodb+srv://Arshmalik:9927756394@cluster0.ppg3lhy.mongodb.net/?appName=Cluster0"
-        );
+            dbUrl)
 
         console.log(
             `Mongo connection DB host: ${connectionDb.connection.host}`
